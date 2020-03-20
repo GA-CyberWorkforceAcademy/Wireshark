@@ -28,22 +28,8 @@ Step 1 : Open and explore the Wireshark application
 1.  We will use Wireshark to capture live traffic. Based on the computer YOU are
     using, select the network interface that shows active traffic (notice the
     graph that indicates activity; for this demonstration the Wi-Fi adapter will
-    be selected. See Arrow “A”) Ensure the proper adapter is highlighted and
-    select the blue shark fin icon at the top left hand side of the screen (See
-    Arrow “B”).
-
-![](media/7c54a9736381ea19edc30a4929b4d174.png)
-
-1.  Once you have hit the capture button, the application will start and you may
-    see a number of color-coded packets beginning to display in the top most
-    viewing pane (Box “A” in the image). The number of packets you see (and
-    their types) is determined by how much your computer is actively
-    communicating over its network interface card. Take note that there is also
-    a middle and bottom viewing pane (Boxes “B” and “C” in the image); these
-    provide more detail concerning the packet highlighted/selected in the top
-    pane.
-
-![](media/cfd1f5f504d189e9f3a4681cfb941c4e.png)
+    be selected.) Ensure the proper adapter is highlighted and select the blue
+    shark fin icon at the top left hand side of the screen.
 
 Step 2 : Exploring Protocols with Wireshark
 -------------------------------------------
