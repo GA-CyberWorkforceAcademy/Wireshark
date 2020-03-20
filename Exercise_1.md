@@ -11,8 +11,14 @@ familiarization with the application and uses a traffic capture file (pcap) to
 demonstrate investigating the OSI model and how encapsulated traffic is
 communicated given different protocols.
 
-Step 1 : Open and explore the Wireshark application
----------------------------------------------------
+### Pre-requisites:
+
+-   Wireshark Installed on workstation
+
+-   Downloaded Exercise 1 PCAP file from Canvas link
+
+Step 1: Open and explore the Wireshark application
+--------------------------------------------------
 
 **(Windows-based installation)**
 
@@ -45,8 +51,23 @@ Step 1 : Open and explore the Wireshark application
 
 ![](media/cfd1f5f504d189e9f3a4681cfb941c4e.png)
 
-Step 2 : Exploring Protocols with Wireshark
--------------------------------------------
+1.  Wireshark will continue to capture and display packets until you stop it.
+    The red square icon, next to the blue shark fin icon you used to start the
+    capture will stop capturing packets. The packets that have been collected
+    during the capture will remain in view. Furthermore, they can be saved into
+    a .pcap file and view later. Stop your packet capture; use the file menu
+    drop-down and save the traffic you have captured to your Desktop (or other
+    location on your computer). This .pcap file may now be opened from Wireshark
+    at a later date if desired.
+
+2.  You will now be opening the .pcap file that you should have downloaded prior
+    to beginning this exercise. If you have not downloaded it you should stop
+    now and find the Exercise 1 PCAP file accompanying this exercise.
+
+3.  Using the file menu drop-down again, select “Open”.
+
+Step 2: Exploring Protocols with Wireshark
+------------------------------------------
 
 1.  Understanding TCP connections is very important since it is one of two major
     Transport layer protocols and allows so much or our day-to-day internet
@@ -56,3 +77,9 @@ Step 2 : Exploring Protocols with Wireshark
 
 2.  You can start by right clicking on any TCP packet in the top viewing windows
     and clicking “Conversation filter” -\> “TCP”.
+
+3.  More
+
+4.  More
+
+5.  Packet contents in Wireshark provide amazing details that are useful
