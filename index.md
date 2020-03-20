@@ -16,7 +16,7 @@ What can Wireshark do?
 
 The following are just a few of the many features of Wireshark:
 
--   Available for Windows or Linux computers
+-   Available for Windows, Mac or Linux computers
 
 -   Capture live traffic from a network interface
 
@@ -30,3 +30,55 @@ The following are just a few of the many features of Wireshark:
 -   Filter or search packets on many criteria
 
 -   Create various statistics
+
+System Requirements (Windows)
+=============================
+
+*Because traffic captures contain a bit-for-bit copy of the traffic and displays
+this detail graphically, Wireshark can be resource intensive if large amounts of
+traffic are being captures (like on a busy network) or displayed (from a very
+large pcap file).*
+
+Wireshark should support any version of Windows that is still within
+its extended support lifetime. This includes Windows 10, 8.1, Server 2019,
+Server 2016, Server 2012 R2, and Server 2012. It also requires the following:
+
+-   The Universal C Runtime. This is included with Windows 10 and Windows Server
+    2019 and is installed automatically on earlier versions if Microsoft Windows
+    Update is enabled
+
+-   Any modern 64-bit AMD64/x86-64 or 32-bit x86 processor
+
+-   500 MB available RAM. Larger capture files require more RAM
+
+-   500 MB available disk space. Capture files require additional disk space
+
+-   A supported network card for capturing (ethernet or wireless)
+
+Downloading Wireshark
+=====================
+
+You will need administrative privileges in order to download and install
+Wireshark.
+
+You can get the latest copy of the program from the Wireshark website
+at <https://www.wireshark.org/download.html>. The download page should
+automatically highlight the appropriate download for your platform and direct
+you to the nearest mirror.
+
+Official Windows and macOS installers are signed by the **Wireshark
+Foundation**. Default settings are recommended for most users.
+
+Getting Started
+===============
+
+Once you have Wireshark install, watch this quick video to orient yourself to
+the application. Once you have finished orientation, you can begin the guided
+exercise on the first traffic capture.
+
+Link
+
+Guided Exercise 1- Discovering Telnet Traffic
+=============================================
+
+Link
