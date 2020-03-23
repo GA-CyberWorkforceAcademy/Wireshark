@@ -54,30 +54,93 @@ Step 1: Open and explore the Wireshark application
 1.  Wireshark will continue to capture and display packets until you stop it.
     The red square icon, next to the blue shark fin icon you used to start the
     capture will stop capturing packets. The packets that have been collected
-    during the capture will remain in view. Furthermore, they can be saved into
-    a .pcap file and view later. Stop your packet capture; use the file menu
-    drop-down and save the traffic you have captured to your Desktop (or other
-    location on your computer). This .pcap file may now be opened from Wireshark
-    at a later date if desired.
+    during the capture will remain in view; they can be saved into a .pcap file
+    and viewed later. Stop your packet capture. Use the file menu drop-down and
+    save the traffic you have captured to your Desktop (or other location on
+    your computer). This .pcap file may now be opened from Wireshark at a later
+    date if desired.
 
-2.  You will now be opening the .pcap file that you should have downloaded prior
-    to beginning this exercise. If you have not downloaded it you should stop
-    now and find the Exercise 1 PCAP file accompanying this exercise.
+2.  You will now open the .pcap file that downloaded prior to beginning this
+    exercise. If you have not downloaded it you should stop now do so.
 
-Step 2: Exploring Protocols with Wireshark
-------------------------------------------
+3.  Using the file menu drop-down again, select “Open”. Find the file named
+    “telnet.pcap” that you downloaded for the exercise and select it. Once
+    opened, you should see the first packet in the .pcap is a TCP segment with a
+    source IP of 192.168.0.2 and a destination of 192.168.0.1. See image below
+    and verify that you have the correct file open.
 
-1.  Understanding TCP connections is very important since it is one of two major
-    Transport layer protocols and allows so much or our day-to-day internet
-    interactions. Everything from web browsing, to email to file transfers can
-    be done with TCP. Wireshark makes it easy to look at the TCP connection
-    process and see what happened.
+![](media/32569ea480703c8e8faf03155fcaf74e.png)
 
-2.  You can start by right clicking on any TCP packet in the top viewing windows
-    and clicking “Conversation filter” -\> “TCP”.
+1.  Looking at the second viewing window (area labeled “B” in the orientation
+    from earlier), expand the details for the IPv4 layer in the first packet in
+    this pcap. You can adjust the height of the top and bottom windows so that
+    the entire contents of the expanded IP layer are in view. See the image
+    below.
 
-3.  More
+![](media/e4184b2809e0a2346e9f8fb4edc0300a.png)
 
-4.  More
+1.  Now that you are familiar with how to expand and view the layers of the
+    packet, for packet 1, minimize the IP layer and expand the TCP layer. Try to
+    answer the following questions about packet 1:
 
-5.  Packet contents in Wireshark provide amazing details that are useful
+2.  What is the TCP source port of this segment:_________\_
+
+3.  What is the TCP destination port of this segment:_________\_
+
+4.  What is the TCP flag that is set in this segment:_________\_
+
+5.  Based on the information in the TCP portion, which part of the TCP 3-way
+    handshake is this packet from:_________\_
+
+Step 2: Deeper Exploration of Protocols
+---------------------------------------
+
+Understanding TCP connections is very important since it is one of two major
+Transport layer protocols and allows so much or our day-to-day internet
+interactions. Everything from web browsing, to email to file transfers can be
+done with TCP. Wireshark makes it easy to look at the TCP connection process and
+see what happened. In this section, we will look deeper into the details of the
+telnet conversation captured in the pcap we have been viewing.
+
+1.  You should still have the “telnet.pcap” file open in Wireshark. You will
+    **right click** on TCP packet 1 in the top viewing window and select
+    “Follow” -\> “TCP Stream” in the drop-down menus.
+
+2.  This will open a new window, which has followed the TCP conversation you
+    selected and re-compiled the communications within it. See the image below.
+
+![](media/fae37b8297515ed93f9eb51c6317b497.png)
+
+1.  Take note of the “Show and save data as” drop-down near the bottom middle of
+    the window. ASCII is the default selection, but depending on the type of
+    information in the capture, this may need to be adjusted. This will be
+    explored in a later exercise.
+
+2.  Try answering the following questions about the telnet communications:
+
+    1.  Based on what you see in this pcap, what is a security concern
+        surrounding the use of telnet for remote access or
+        administration:______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________\_
+
+    2.  What were the credentials that allowed access to this remote
+        device:__________________________________________________________________________________\_
+
+    3.  Based on what you see in the window, what do you think is the
+        significance of the colorization (red vs. blue) of the
+        data:_______________________________________________________________________________________________________________________________________________________________________________\_
+
+3.  Close the TCP Stream window. Take note that in the ribbon across the top of
+    Wireshark, there is a new filter automatically created and applied
+    (tcp.stream eq 0) See image.
+
+![](media/44a2edbbcffed90337ceaed7cac6efcb.png)
+
+Packet contents in Wireshark provide amazing details that are useful in
+understanding exactly what has happened during communications. Keep in mind that
+the pcap you are investigating contains only a single TCP conversation covering
+the telnet exchange; generally, a capture will contain a wide variety of
+traffic, based on all the communications and exchanges traversing the network
+interface card.
+
+Step 3: Continue to Investigate
+-------------------------------
