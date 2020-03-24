@@ -1,8 +1,8 @@
 Cyber Workforce Academy
 =======================
 
-Understanding Traffic with Wireshark
-------------------------------------
+Discovering Traffic with Wireshark
+----------------------------------
 
 ### Objectives:
 
@@ -15,7 +15,11 @@ communicated given different protocols.
 
 -   Wireshark Installed on workstation
 
--   Downloaded Exercise 1 PCAP file from Canvas link
+-   Downloaded Exercise 1 PCAP files from Canvas link
+
+    -   telnet.pcap
+
+    -   MagicJack.pcap
 
 Step 1: Open and explore the Wireshark application
 --------------------------------------------------
@@ -150,3 +154,40 @@ card.
 
 Step 3: Continue to Investigate
 -------------------------------
+
+Because Wireshark captures every bit (1’s and 0’s) in communications, the actual
+traffic can be reassembled into whatever data was being sent/received based on
+the protocol it belongs to. Wireshark can perform this reassembly for a number
+of protocols. We will demonstrate this the reassembly of a phone call placed on
+a MagicJack, which uses SIP protocol to transmit voice over IP (VoIP). Make sure
+your volume is turned up enough to hear the audio conversation for this portion
+of the exercise!
+
+1.  Using the file menu drop-down again, select “Open”. Find the file named
+    “MagicJack.pcap” that you downloaded for the exercise and select it. Once
+    opened, you should see the first packet in the .pcap is an ICMP packet with
+    a source IP of 192.168.0.10 and a destination of 192.168.0.1. See image
+    below and verify that you have the correct file open.
+
+![](media/3eb20a1e2886d1c35191aee518da0f05.png)
+
+1.  From the Telephony tab drop-down, select the first option “Telephony” -\>
+    “VoIP Calls”. A new window will appear with any/all reassembled calls
+    derived from the .pcap. See image below.
+
+![](media/8721119b6237ed9dee455dc14f24ecb5.png)
+
+1.  Highlight the call, and press the “Play Streams” button. This will deploy
+    Wireshark’s RTP player showing the audio. See image below.
+
+![](media/a0207fa4e2dbfb2296279df64c4c679c.png)
+
+1.  Press the button with the play icon on the lower left hand side of this
+    window to hear the audio play. Now try answering the following questions
+    about the communications:
+
+    1.  What did you notice about the audio that was
+        replayed:____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________\_
+
+    2.  What is the significance of the grey, versus the blue
+        lines:__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________\_
