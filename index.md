@@ -75,9 +75,9 @@ Guided Instruction and Exercise 1
 Before you proceed to the first guided instruction set and exercise, download
 the following files:
 
--   Download File 1 for Lab Here
+-   [Download File 1 for Lab Here](PCAP_Samples/telnet.pcap)
 
--   [Download File 2 for Lab Here](PCAP_Samples/MagicJack.pcap)
+-   Download File 2 for Lab Here
 
 -   [Download Instructions for “Discovering Traffic with
     Wireshark”](Exercise_1.md)
