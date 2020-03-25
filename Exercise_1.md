@@ -26,7 +26,7 @@ Step 1: Open and explore the Wireshark application
 
 **(Windows-based installation)**
 
-1.  After installation, open the Wireshark application. The first menu view will
+-   After installation, open the Wireshark application. The first menu view will
     present the options of opening a previously captured stream of traffic
     (.pcap file format) or using Wireshark to start a new, live traffic capture.
     You may have different interface options than in the image as this depending
@@ -35,7 +35,7 @@ Step 1: Open and explore the Wireshark application
 
 ![](media/fadbe7aeea3d81b381df9279fbec9c92.png)
 
-1.  We will use Wireshark to capture live traffic. Based on the computer YOU are
+-   We will use Wireshark to capture live traffic. Based on the computer YOU are
     using, select the network interface that shows active traffic (notice the
     graph that indicates activity; for this demonstration the Wi-Fi adapter will
     be selected. See Arrow “A”) Ensure the proper adapter is highlighted and
@@ -44,7 +44,7 @@ Step 1: Open and explore the Wireshark application
 
 ![](media/7c54a9736381ea19edc30a4929b4d174.png)
 
-1.  Once you have hit the capture button, the application will start and you may
+-   Once you have hit the capture button, the application will start and you may
     see a number of color-coded packets beginning to display in the top most
     viewing pane (Box “A” in the image). The number of packets you see (and
     their types) is determined by how much your computer is actively
@@ -55,7 +55,7 @@ Step 1: Open and explore the Wireshark application
 
 ![](media/cfd1f5f504d189e9f3a4681cfb941c4e.png)
 
-1.  Wireshark will continue to capture and display packets until you stop it.
+-   Wireshark will continue to capture and display packets until you stop it.
     The red square icon, next to the blue shark fin icon you used to start the
     capture will stop capturing packets. The packets that have been collected
     during the capture will remain in view; they can be saved into a .pcap file
@@ -64,10 +64,10 @@ Step 1: Open and explore the Wireshark application
     your computer). This .pcap file may now be opened from Wireshark at a later
     date if desired.
 
-2.  You will now open the .pcap file that downloaded prior to beginning this
+-   You will now open the .pcap file that downloaded prior to beginning this
     exercise. If you have not downloaded it you should stop now do so.
 
-3.  Using the file menu drop-down again, select “Open”. Find the file named
+-   Using the file menu drop-down again, select “Open”. Find the file named
     “telnet.pcap” that you downloaded for the exercise and select it. Once
     opened, you should see the first packet in the .pcap is a TCP segment with a
     source IP of 192.168.0.2 and a destination of 192.168.0.1. See image below
@@ -75,7 +75,7 @@ Step 1: Open and explore the Wireshark application
 
 ![](media/32569ea480703c8e8faf03155fcaf74e.png)
 
-1.  Looking at the second viewing window (area labeled “B” in the orientation
+-   Looking at the second viewing window (area labeled “B” in the orientation
     from earlier), expand the details for the IPv4 layer in the first packet in
     this pcap. You can adjust the height of the top and bottom windows so that
     the entire contents of the expanded IP layer are in view. See the image
@@ -83,7 +83,7 @@ Step 1: Open and explore the Wireshark application
 
 ![](media/e4184b2809e0a2346e9f8fb4edc0300a.png)
 
-1.  Now that you are familiar with how to expand and view the layers of the
+-   Now that you are familiar with how to expand and view the layers of the
     packet, for packet 1, minimize the IP layer and expand the TCP layer. Try to
     answer the following questions about packet 1:
 
@@ -106,21 +106,21 @@ done with TCP. Wireshark makes it easy to look at the TCP connection process and
 see what happened. In this section, we will look deeper into the details of the
 telnet conversation captured in the pcap we have been viewing.
 
-1.  You should still have the “telnet.pcap” file open in Wireshark. You will
+-   You should still have the “telnet.pcap” file open in Wireshark. You will
     **right click** on TCP packet 1 in the top viewing window and select
     “Follow” -\> “TCP Stream” in the drop-down menus.
 
-2.  This will open a new window, which has followed the TCP conversation you
+-   This will open a new window, which has followed the TCP conversation you
     selected and re-compiled the communications within it. See the image below.
 
 ![](media/fae37b8297515ed93f9eb51c6317b497.png)
 
-1.  Take note of the “Show and save data as” drop-down near the bottom middle of
+-   Take note of the “Show and save data as” drop-down near the bottom middle of
     the window. ASCII is the default selection, but depending on the type of
     information in the capture, this may need to be adjusted. This will be
     explored in a later exercise.
 
-2.  Try answering the following questions about the telnet communications:
+-   Try answering the following questions about the telnet communications:
 
     1.  Based on what you see in this pcap, what is a security concern
         surrounding the use of telnet for remote access or
@@ -133,7 +133,7 @@ telnet conversation captured in the pcap we have been viewing.
         significance of the colorization (red vs. blue) of the
         data:_______________________________________________________________________________________________________________________________________________________________________________\_
 
-3.  Close the TCP Stream window. Take note that in the ribbon across the top of
+-   Close the TCP Stream window. Take note that in the ribbon across the top of
     Wireshark, there is a new filter automatically created and applied
     (tcp.stream eq 0). For this conversation, there is only a single TCP
     conversation, but in different pcap files, you may have many tcp streams. By
@@ -163,7 +163,7 @@ a MagicJack, which uses SIP protocol to transmit voice over IP (VoIP). Make sure
 your volume is turned up enough to hear the audio conversation for this portion
 of the exercise!
 
-1.  Using the file menu drop-down again, select “Open”. Find the file named
+-   Using the file menu drop-down again, select “Open”. Find the file named
     “MagicJack.pcap” that you downloaded for the exercise and select it. Once
     opened, you should see the first packet in the .pcap is an ICMP packet with
     a source IP of 192.168.0.10 and a destination of 192.168.0.1. See image
@@ -171,18 +171,18 @@ of the exercise!
 
 ![](media/3eb20a1e2886d1c35191aee518da0f05.png)
 
-1.  From the Telephony tab drop-down, select the first option “Telephony” -\>
+-   From the Telephony tab drop-down, select the first option “Telephony” -\>
     “VoIP Calls”. A new window will appear with any/all reassembled calls
     derived from the .pcap. See image below.
 
 ![](media/8721119b6237ed9dee455dc14f24ecb5.png)
 
-1.  Highlight the call, and press the “Play Streams” button. This will deploy
+-   Highlight the call, and press the “Play Streams” button. This will deploy
     Wireshark’s RTP player showing the audio. See image below.
 
 ![](media/a0207fa4e2dbfb2296279df64c4c679c.png)
 
-1.  Press the button with the play icon on the lower left hand side of this
+-   Press the button with the play icon on the lower left hand side of this
     window to hear the audio play. Now try answering the following questions
     about the communications:
 
