@@ -4,11 +4,13 @@ Guided Instruction and Exercise 2
 Before you proceed to the first guided instruction set and exercise, download
 the following files:
 
--   [Download File 1 for Lab
-    Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/telnet.pcap)
+-   Download File 1 for Lab Here
 
--   [Download File 2 for Lab
-    Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/MagicJack.pcap)
+-   Download File 2 for Lab Here
 
-[Instructions for “Analyzing Protocols with Wireshark”](https://ga-cyberworkforceacademy.github.io/Wireshark/Exercise_2)
-------------------------------------------------------------------------------------------------------------------------
+-   Download File 3 for Lab Here
+
+-   Download File 4 for Lab Here
+
+*Instructions for “Analyzing Protocols with Wireshark”*
+-------------------------------------------------------
