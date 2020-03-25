@@ -68,17 +68,3 @@ you to the nearest mirror.
 
 Official Windows and macOS installers are signed by the **Wireshark
 Foundation**. Default settings are recommended for most users.
-
-Guided Instruction and Exercise 1
-=================================
-
-Before you proceed to the first guided instruction set and exercise, download
-the following files:
-
--   [Download File 1 for Lab
-    Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/telnet.pcap)
-
--   [Download File 2 for Lab
-    Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/MagicJack.pcap)
-
-Instructions for “Discovering Traffic with Wireshark”

@@ -17,12 +17,18 @@ understood through traffic analysis.
 
 -   Downloaded Exercise 2 PCAP files from Canvas link
 
+    -   arp.pcapng
+
+    -   dns.pcapng
+
+    -   http.pcapng
+
     -   icmp.pcap
 
-    -   \*.pcap
+    -   icmp_route_record_set.pcapng
 
-Step 1: Understanding IPv4 attributes 
---------------------------------------
+Step 1: Understanding IPv4 attributes
+-------------------------------------
 
 **(Windows-based installation)**
 
