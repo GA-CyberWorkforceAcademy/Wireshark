@@ -87,14 +87,14 @@ Step 1: Open and explore the Wireshark application
     packet, for packet 1, minimize the IP layer and expand the TCP layer. Try to
     answer the following questions about packet 1:
 
-2.  What is the TCP source port of this segment:_________\_
+    1.  What is the TCP source port of this segment:_________\_
 
-3.  What is the TCP destination port of this segment:_________\_
+    2.  What is the TCP destination port of this segment:_________\_
 
-4.  What is the TCP flag that is set in this segment:_________\_
+    3.  What is the TCP flag that is set in this segment:_________\_
 
-5.  Based on the information in the TCP portion, which part of the TCP 3-way
-    handshake is this packet from:_________\_
+    4.  Based on the information in the TCP portion, which part of the TCP 3-way
+        handshake is this packet from:_________\_
 
 Step 2: Deeper Exploration of Protocols
 ---------------------------------------
