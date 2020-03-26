@@ -3,7 +3,7 @@ What is Wireshark
 
 Wireshark is an open-source network packet analyzer that provides an easy to use
 GUI interface. This packet analyzer can capture and present packet data in
-detail allowing you to see what is happening inside a in network communications.
+detail, allowing you to see what is happening inside network communications.
 
 Wireshark is an important tool for IT and Cybersecurity professionals but also
 makes a great teaching tool. Professionals may use Wireshark to investigate
@@ -36,7 +36,7 @@ System Requirements (Windows)
 
 *Because traffic captures contain a bit-for-bit copy of the traffic and displays
 this detail graphically, Wireshark can be resource intensive if large amounts of
-traffic are being captures (like on a busy network) or displayed (from a very
+traffic are being captured (like on a busy network) or displayed (from a very
 large pcap file).*
 
 Wireshark should support any version of Windows that is still within
@@ -53,7 +53,7 @@ Server 2016, Server 2012 R2, and Server 2012. It also requires the following:
 
 -   500 MB available disk space. Capture files require additional disk space
 
--   A supported network card for capturing (ethernet or wireless)
+-   A supported network card for capturing (Ethernet or wireless)
 
 Downloading Wireshark
 =====================
@@ -66,5 +66,5 @@ at <https://www.wireshark.org/download.html>. The download page should
 automatically highlight the appropriate download for your platform and direct
 you to the nearest mirror.
 
-Official Windows and macOS installers are signed by the **Wireshark
+Official Windows and MacOS installers are signed by the **Wireshark
 Foundation**. Default settings are recommended for most users.

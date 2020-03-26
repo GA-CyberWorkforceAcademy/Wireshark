@@ -21,7 +21,7 @@ communicated given different protocols.
 
     -   MagicJack.pcap
 
-Step 1: Open and explore the Wireshark application
+Step 1: Open and Explore the Wireshark Application
 --------------------------------------------------
 
 **(Windows-based installation)**
@@ -69,9 +69,9 @@ Step 1: Open and explore the Wireshark application
 
 -   Using the file menu drop-down again, select “Open”. Find the file named
     “telnet.pcap” that you downloaded for the exercise and select it. Once
-    opened, you should see the first packet in the .pcap is a TCP segment with a
-    source IP of 192.168.0.2 and a destination of 192.168.0.1. See image below
-    and verify that you have the correct file open.
+    opened, you should see the first packet in the pcap. There is a TCP segment
+    with a source IP of 192.168.0.2 and a destination of 192.168.0.1. See image
+    below and verify that you have the correct file open.
 
 ![](media/32569ea480703c8e8faf03155fcaf74e.png)
 
@@ -100,7 +100,7 @@ Step 2: Deeper Exploration of Protocols
 ---------------------------------------
 
 Understanding TCP connections is very important since it is one of two major
-Transport layer protocols and allows so much or our day-to-day internet
+Transport layer protocols and allows so much of our day-to-day internet
 interactions. Everything from web browsing, to email to file transfers can be
 done with TCP. Wireshark makes it easy to look at the TCP connection process and
 see what happened. In this section, we will look deeper into the details of the
@@ -136,8 +136,8 @@ telnet conversation captured in the pcap we have been viewing.
 -   Close the TCP Stream window. Take note that in the ribbon across the top of
     Wireshark, there is a new filter automatically created and applied
     (tcp.stream eq 0). For this conversation, there is only a single TCP
-    conversation, but in different pcap files, you may have many tcp streams. By
-    changing the number in filter, you can move to other conversations (eq 0
+    conversation, but in different pcap files, you may have many TCP streams. By
+    changing the number in the filter, you can move to other conversations (eq 0
     would be changed to eq 1, or so on). You can also remove the filter to
     return to the view of all packets in the capture. You can also filter by a
     number of other criteria such as protocol, IP addresses, port information
