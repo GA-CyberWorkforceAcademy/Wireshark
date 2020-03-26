@@ -10,7 +10,5 @@ the following files:
 
 -   Download File 3 for Lab Here
 
--   Download File 4 for Lab Here
-
 *Instructions for “Analyzing Protocols with Wireshark”*
 -------------------------------------------------------
