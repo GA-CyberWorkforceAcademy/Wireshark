@@ -4,6 +4,13 @@ Cyber Workforce Academy
 Analyzing Protocols with Wireshark
 ----------------------------------
 
+Record your answers to all of the questions presented in the exercise. Ensure
+you record the step number and question number for quick reference. The end of
+exercise quiz located in canvas covers a random selection of these questions.
+You may want to open the quiz in a separate window and complete it as you work
+through the exercise. You can take the quiz as many times as needed to complete
+it.
+
 ### Objectives:
 
 This exercise supports a discussion surrounding protocol analysis using
@@ -50,34 +57,24 @@ and their contents in ARP communications.
 -   In the middle viewing window, expand the “Ethernet II” Layer of the first
     packet and answer the following questions.
 
-1.  What is the Ethernet destination address in the frame
+1.  What is the Ethernet destination address in the frame (format
+    xx:xx:xx:xx:xx:xx)?
 
--   (format
-    xx:xx:xx:xx:xx:xx)______________________________________________________________\_
+2.  What is the Ethernet source address in the frame (format xx:xx:xx:xx:xx:xx)?
 
-1.  What is the Ethernet source address in the frame
-
--   (format
-    xx:xx:xx:xx:xx:xx)______________________________________________________________\_
-
-1.  What is the Hex code for the protocol (ARP) that the Ethernet layer
-    indicates it has encapsulated
-
--   (format
-    0xHex):_________________________________________________________________________\_
+3.  What is the Hex code for the protocol (ARP) that the Ethernet layer
+    indicates it has encapsulated (format 0xHex)?
 
 -   In the middle viewing window, expand the “Address Resolution Protocol
     (request)” layer of the first packet and answer the following questions.
 
     1.  The sender of the ARP request is seeking the MAC address of a particular
         IPv4 Address. What is the IPv4 address that the sender is requesting a
-        MAC address
-        for:_________________________________________________________________________\_
+        MAC address for?
 
     2.  The “Protocol Type” section of the ARP header indicates IPv4 (Hex code
         0x800). What is the name of the section of the ARP header that indicates
-        this is “request” (by the number
-        1):__________________________________________________\_
+        this is “request” (by the number 1)?
 
 -   Switch to the second packet in the capture (click the second packet in the
     top viewing window). In the middle viewing window, expand the “Address
@@ -86,13 +83,10 @@ and their contents in ARP communications.
 
     1.  This packet is the reply to the ARP request. What is the MAC address
         that has been provided in the reply for the requested host IPv4 address
+        (format xx:xx:xx:xx:xx:xx)?
 
-    -   (format
-        xx:xx:xx:xx:xx:xx)__________________________________________________________\_
-
-    1.  The opcode for this packet indicates that it is a reply. What is the
-        opcode number in the ARP protocol section for the
-        opcode:_____________________________\_
+    2.  The opcode for this packet indicates that it is a reply. What is the
+        opcode number in the ARP protocol section for the opcode?
 
 Step 2: Understanding DNS Attributes
 ------------------------------------
@@ -127,11 +121,10 @@ and their contents in client-server based DNS communications.
     of the first packet and answer the following questions.
 
     1.  What is the host requesting a domain name resolution (source IPv4
-        address):_______________________________________________________________________________\_
+        address)?
 
     2.  What is the DNS server the host is sending the query to (destination
-        IPv4
-        address):_______________________________________________________________________________\_
+        IPv4 address)?
 
 -   In the middle viewing window, expand the “User Datagram Protocol” Layer of
     the first packet and answer the following questions.
@@ -141,20 +134,17 @@ and their contents in client-server based DNS communications.
         port):_____________________________________________________\_
 
     2.  What UDP port is DNS being sent to on the destination server
-        (destination
-        port):__________________________________________________________________________________\_
+        (destination port)?
 
 -   In the middle viewing window, expand the “Domain Name System” Layer of the
     first packet and answer the following questions.
 
     1.  Expand the “Flags” portion of the DNS header. This packet is a query;
         based on the two bytes given in the Flags portion (0x0100), what is the
-        opcode value of a query (provide decimal
-        value):_______________________________________________________\_
+        opcode value of a query (provide decimal value)?
 
     2.  Expand the “Queries” portion of the DNS header. What is the domain name
-        that resolution has been requested
-        for:___________________________________________________\_
+        that resolution has been requested for?
 
 Step 3: Understanding HTTP Attributes
 -------------------------------------
@@ -189,40 +179,28 @@ and their contents in client-server based HTTP communications.
     1.  The first, second and third packets are parts of the initiation of a TCP
         3-way Handshake. This establishes a connection and allows TCP
         communications between two endpoints. What are the Hex codes for the
-        flags in these three packets. (Recall the TCP 3-way handshake consists
-        of a SYN, SYN-ACK and ACK)
+        flags in these three packets (Recall the TCP 3-way handshake consists of
+        a SYN, SYN-ACK and ACK)?
 
->   SYN Hex
->   code:__________________________________________________________________________\_
-
->   SYN-ACK Hex
->   code:____________________________________________________________________\_
-
->   ACK Hex
->   code:__________________________________________________________________________\_
-
-1.  The TCP conversation tracks information transferred, by using “sequence” and
-    “acknowledgement” numbers. For ease of analysis, Wireshark presents the
-    first segment in a TCP conversation (the initial SYN) with a “relative”
-    sequence number of 0, and increments segments from there. The true “raw”
-    sequence number is still preserved since it is a part of the bit-for-bit
-    traffic that has been captured. Looking in the TCP layer, what is the “raw”
-    sequence number where this conversation started (packet
-    1):________________________________________________\_
+    2.  The TCP conversation tracks information transferred, by using “sequence”
+        and “acknowledgement” numbers. For ease of analysis, Wireshark presents
+        the first segment in a TCP conversation (the initial SYN) with a
+        “relative” sequence number of 0, and increments segments from there. The
+        true “raw” sequence number is still preserved since it is a part of the
+        bit-for-bit traffic that has been captured. Looking in the TCP layer,
+        what is the “raw” sequence number where this conversation started
+        (packet 1)?
 
 -   Using both the middle viewing window, examine packets 4 and 12, which
     contain HTTP data. Answer the following questions about the HTTP layer.
 
     1.  Based on the request header format, the first item is the “method”. For
         packet 4, which contains a HTTP request, what method is specified and
-        what does this
-        mean:___________________________________________________________________________________\_
+        what does this mean?
 
     2.  The server responds to requests with response messages and any
         related/requested information. Looking at packet 12, what is the
-        response code the server provides and what does that
-        mean:___________________________________________________________________________________\_
+        response code the server provides and what does that mean?
 
     3.  In packet 12, find the “Line Based Text” field. Expand this field and
-        investigate it. What do you think this information
-        is:______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________\_
+        investigate it. What do you think this information is?
