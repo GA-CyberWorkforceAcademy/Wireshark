@@ -129,12 +129,9 @@ and their contents in client-server based DNS communications.
 -   In the middle viewing window, expand the “User Datagram Protocol” Layer of
     the first packet and answer the following questions.
 
-  3.  What UDP port is the host requesting a domain name resolution using for
-        the communications (source
-        port)?
+  3.  What UDP port is the host using in its request for domain name resolution (source port)?
 
-  4.  What UDP port is DNS being sent to on the destination server
-        (destination port)?
+  4.  What UDP port is the request being sent to on the destination server (destination port)?
 
 -   In the middle viewing window, expand the “Domain Name System” Layer of the
     first packet and answer the following questions.
