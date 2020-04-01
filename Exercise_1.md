@@ -94,13 +94,13 @@ Step 1: Open and Explore the Wireshark Application
     packet, for packet 1, minimize the IP layer and expand the TCP layer. Try to
     answer the following questions about packet 1:
 
-    1.  What is the TCP source port of this segment?
+  1.  What is the TCP source port of this segment?
 
-    2.  What is the TCP destination port of this segment?
+  2.  What is the TCP destination port of this segment?
 
-    3.  What is the TCP flag that is set in this segment?
+  3.  What is the TCP flag that is set in this segment?
 
-    4.  Based on the information in the TCP portion, which part of the TCP 3-way
+  4.  Based on the information in the TCP portion, which part of the TCP 3-way
         handshake is this packet from?
 
 Step 2: Deeper Exploration of Protocols
@@ -129,13 +129,13 @@ telnet conversation captured in the pcap we have been viewing.
 
 -   Try answering the following questions about the telnet communications:
 
-    1.  Based on what you see in this pcap, what is a security concern
-        surrounding the use of telnet for remote access or administration?
+  1.  Based on what you see in this pcap, what is a security concern
+      surrounding the use of telnet for remote access or administration?
 
-    2.  What were the credentials that allowed access to this remote device?
+  2.  What were the credentials that allowed access to this remote device?
 
-    3.  Based on what you see in the window, what do you think is the
-        significance of the colorization (red vs. blue) of the data?
+  3.  Based on what you see in the window, what do you think is the
+      significance of the colorization (red vs. blue) of the data?
 
 -   Close the TCP Stream window. Take note that in the ribbon across the top of
     Wireshark, there is a new filter automatically created and applied
@@ -190,6 +190,6 @@ of the exercise!
     window to hear the audio play. Now try answering the following questions
     about the communications:
 
-    1.  What did you notice about the audio that was replayed?
+  1.  What did you notice about the audio that was replayed?
 
-    2.  What is the significance of the grey, versus the blue lines?
+  2.  What is the significance of the grey, versus the blue lines?
