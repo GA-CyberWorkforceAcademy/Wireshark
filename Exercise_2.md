@@ -74,7 +74,7 @@ and their contents in ARP communications.
 
 5.  The “Protocol Type” section of the ARP header indicates IPv4 (Hex code
     0x800). What is the name of the section of the ARP header that indicates
-    this is “request” (by the number 1)?
+    this is a “request” (by the number 1)?
 
 -   Switch to the second packet in the capture (click the second packet in the
     top viewing window). In the middle viewing window, expand the “Address
