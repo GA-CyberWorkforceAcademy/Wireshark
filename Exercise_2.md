@@ -131,7 +131,7 @@ and their contents in client-server based DNS communications.
 
   3.  What UDP port is the host requesting a domain name resolution using for
         the communications (source
-        port):_____________________________________________________\_
+        port)?
 
   4.  What UDP port is DNS being sent to on the destination server
         (destination port)?
