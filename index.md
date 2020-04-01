@@ -68,3 +68,12 @@ you to the nearest mirror.
 
 Official Windows and MacOS installers are signed by the **Wireshark
 Foundation**. Default settings are recommended for most users.
+
+Using Wireshark
+===============
+
+Wireshark can be used to capture packets or display files (.pcap format) of
+previously captured traffic. Once open, the Wireshark GUI provides a robust
+graphical view of information.
+
+![](media/34a2c5cba616b435686108ef78f06373.png)
