@@ -120,30 +120,30 @@ and their contents in client-server based DNS communications.
 -   In the middle viewing window, expand the “Internet Protocol Version 4” Layer
     of the first packet and answer the following questions.
 
-    1.  What is the host requesting a domain name resolution (source IPv4
+  1.  What is the host requesting a domain name resolution (source IPv4
         address)?
 
-    2.  What is the DNS server the host is sending the query to (destination
+  2.  What is the DNS server the host is sending the query to (destination
         IPv4 address)?
 
 -   In the middle viewing window, expand the “User Datagram Protocol” Layer of
     the first packet and answer the following questions.
 
-    3.  What UDP port is the host requesting a domain name resolution using for
+  3.  What UDP port is the host requesting a domain name resolution using for
         the communications (source
         port):_____________________________________________________\_
 
-    4.  What UDP port is DNS being sent to on the destination server
+  4.  What UDP port is DNS being sent to on the destination server
         (destination port)?
 
 -   In the middle viewing window, expand the “Domain Name System” Layer of the
     first packet and answer the following questions.
 
-    5.  Expand the “Flags” portion of the DNS header. This packet is a query;
+  5.  Expand the “Flags” portion of the DNS header. This packet is a query;
         based on the two bytes given in the Flags portion (0x0100), what is the
         opcode value of a query (provide decimal value)?
 
-    6.  Expand the “Queries” portion of the DNS header. What is the domain name
+  6.  Expand the “Queries” portion of the DNS header. What is the domain name
         that resolution has been requested for?
 
 Step 3: Understanding HTTP Attributes
@@ -176,13 +176,13 @@ and their contents in client-server based HTTP communications.
 -   Using both the top and middle viewing windows, examine the first three
     packets (1-3) which contain TCP segments. Answer the following questions.
 
-    1.  The first, second and third packets are parts of the initiation of a TCP
+  1.  The first, second and third packets are parts of the initiation of a TCP
         3-way Handshake. This establishes a connection and allows TCP
         communications between two endpoints. What are the Hex codes for the
         flags in these three packets (Recall the TCP 3-way handshake consists of
         a SYN, SYN-ACK and ACK)?
 
-    2.  The TCP conversation tracks information transferred, by using “sequence”
+  2.  The TCP conversation tracks information transferred, by using “sequence”
         and “acknowledgement” numbers. For ease of analysis, Wireshark presents
         the first segment in a TCP conversation (the initial SYN) with a
         “relative” sequence number of 0, and increments segments from there. The
@@ -194,13 +194,13 @@ and their contents in client-server based HTTP communications.
 -   Using both the middle viewing window, examine packets 4 and 12, which
     contain HTTP data. Answer the following questions about the HTTP layer.
 
-    3.  Based on the request header format, the first item is the “method”. For
+  3.  Based on the request header format, the first item is the “method”. For
         packet 4, which contains a HTTP request, what method is specified and
         what does this mean?
 
-    4.  The server responds to requests with response messages and any
+  4.  The server responds to requests with response messages and any
         related/requested information. Looking at packet 12, what is the
         response code the server provides and what does that mean?
 
-    5.  In packet 12, find the “Line Based Text” field. Expand this field and
+  5.  In packet 12, find the “Line Based Text” field. Expand this field and
         investigate it. What do you think this information is?
