@@ -86,7 +86,7 @@ and their contents in ARP communications.
     (format xx:xx:xx:xx:xx:xx)?
 
 7.  The opcode for this packet indicates that it is a reply. What is the
-    opcode number in the ARP protocol section for the opcode?
+    opcode number in the ARP protocol section indicating a reply?
 
 Step 2: Understanding DNS Attributes
 ------------------------------------
