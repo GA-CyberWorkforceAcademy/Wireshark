@@ -10,5 +10,5 @@ the following files:
 
 -   Download File 3 for Exercise Here
 
-[Instructions for “Analyzing Protocols with Wireshark”[(https://ga-cyberworkforceacademy.github.io/Wireshark/Exercise_2)
+[Instructions for “Analyzing Protocols with Wireshark”](https://ga-cyberworkforceacademy.github.io/Wireshark/Exercise_2)
 =====================================================
