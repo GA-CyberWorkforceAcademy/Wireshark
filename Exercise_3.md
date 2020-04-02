@@ -98,10 +98,12 @@ data objects from protocols not natively exported by Wireshark.
 -   This will bring up a new window where you can see the communications between
     a host and an FTP server. Servers using FTP actually use two ports. The
     command and control (such as authentication, communications, etc) use port
-    21. Data being transfers as a part of a file transfer request uses port 20.
-    The communications you see for the TCP conversation selected are using port
-    21; you can see in the window that a user logged in, looked at the files in
-    the directory, and then requested a file transfer (pantheon.jpg).
+
+    1.  Data being transfers as a part of a file transfer request uses port 20.
+        The communications you see for the TCP conversation selected are using
+        port 21; you can see in the window that a user logged in, looked at the
+        files in the directory, and then requested a file transfer
+        (pantheon.jpg).
 
 -   Having identified the file that is requested (pantheon.jpg), now you must
     find the data which transfers this file and extract it. Since the “Follow \>
@@ -131,3 +133,24 @@ data objects from protocols not natively exported by Wireshark.
     the image below.
 
 ![](media/c10bc7825a9a0a2cb025bbee6f3fa13c.png)
+
+-   Use the “Save as…” button and save the file on your computer with the “.jpg”
+    extension. You can save the file with any name you would like, as long as it
+    has the correction file extension. This pulls the raw data from tcp stream 2
+    out of the pcap and assembles it into a file in the save location. This file
+    extension lets your computer’s operating system know how to interpret the
+    data (1’s and 0’s) and reassemble them, as well as what types of programs on
+    the computer can be used in this function. You should be able to locate the
+    file (see a thumbnail preview of the image) and open it to display the full
+    picture. See below (for simplicity, this image was saved with its original
+    name of pantheon).
+
+![](media/976ed9bdc9133ccb7d0a0b58b1ee3dd5.png)
+
+-   The method used here to save raw data as a file works for any protocol/data
+    as long as you know how to find the specific data you want to extract, and
+    what file type it should be saved as. This means that even malware/viruses
+    can be extracted from a PCAP. Although traffic containing malware rendered
+    in Wireshark is safe since it is a graphical depiction of the bits and not
+    an executable program, remember that the malware can be extracted from a
+    pcap and would be live and dangerous at that point.
