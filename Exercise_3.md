@@ -66,7 +66,7 @@ file.
     viewing the picture, what is this a picture of?
 
 3.  How many kilobytes is the picture in packet 2104 (girl eating watermelon
-    jpeg)? 12
+    jpeg)?
 
 Step 2: Carving Data from Common Protocols
 ------------------------------------------
@@ -99,11 +99,10 @@ data objects from protocols not natively exported by Wireshark.
     a host and an FTP server. Servers using FTP actually use two ports. The
     command and control (such as authentication, communications, etc) use port
 
-    1.  Data being transfers as a part of a file transfer request uses port 20.
-        The communications you see for the TCP conversation selected are using
-        port 21; you can see in the window that a user logged in, looked at the
-        files in the directory, and then requested a file transfer
-        (pantheon.jpg).
+-   Data being transfers as a part of a file transfer request uses port 20. The
+    communications you see for the TCP conversation selected are using port 21;
+    you can see in the window that a user logged in, looked at the files in the
+    directory, and then requested a file transfer (pantheon.jpg).
 
 -   Having identified the file that is requested (pantheon.jpg), now you must
     find the data which transfers this file and extract it. Since the “Follow \>
