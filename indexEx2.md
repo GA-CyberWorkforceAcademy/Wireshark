@@ -16,5 +16,5 @@ exercise:
 -   [Download File 3 for Exercise
     Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/http.pcapng)
 
-Instructions for “Analyzing Protocols with Wireshark”
+[Instructions for “Analyzing Protocols with Wireshark”](https://ga-cyberworkforceacademy.github.io/Wireshark/Exercise_2)
 =====================================================
