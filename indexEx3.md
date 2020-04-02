@@ -1,12 +1,17 @@
 Guided Instruction and Exercise 3
 =================================
 
-Before you proceed to the first guided instruction set and exercise, download
-the following files:
+Estimated time to complete: 1 hour
 
--   [Download File 1 for Exercise Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/http_images.pcapng)
+The instructions and exercise provided here require the use of Wireshark on your
+computer. You will need to download the following files to use during the
+exercise:
 
--   [Download File 2 for Exercise Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/ftp.pcapng)
+-   [Download File 1 for Exercise
+    Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/http_images.pcapng)
 
-[Instructions for “Recovering Data with Wireshark”](https://ga-cyberworkforceacademy.github.io/Wireshark/Exercise_3)
+-   [Download File 2 for Exercise
+    Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/ftp.pcapng)
+
+Instructions for “Recovering Data with Wireshark”
 =================================================
