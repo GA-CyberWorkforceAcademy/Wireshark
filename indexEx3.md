@@ -13,5 +13,5 @@ exercise:
 -   [Download File 2 for Exercise
     Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/ftp.pcapng)
 
-Instructions for “Recovering Data with Wireshark”
+[Instructions for “Recovering Data with Wireshark”](https://ga-cyberworkforceacademy.github.io/Wireshark/Exercise_3)
 =================================================
