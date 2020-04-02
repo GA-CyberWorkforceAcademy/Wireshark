@@ -65,11 +65,11 @@ and their contents in ARP communications.
 -   In the middle viewing window, expand the “Address Resolution Protocol
     (request)” layer of the first packet and answer the following questions.
 
-1.  The sender of the ARP request is seeking the MAC address of a particular
+4.  The sender of the ARP request is seeking the MAC address of a particular
     IPv4 Address. What is the IPv4 address that the sender is requesting a MAC
     address for?
 
-2.  The “Protocol Type” section of the ARP header indicates IPv4 (Hex code
+5.  The “Protocol Type” section of the ARP header indicates IPv4 (Hex code
     0x800). What is the name of the section of the ARP header that indicates
     this is a “request” (by the number 1)?
 
@@ -78,11 +78,11 @@ and their contents in ARP communications.
     Resolution Protocol (reply)” layer of the second packet and answer the
     following questions.
 
-1.  This packet is the reply to the ARP request. What is the MAC address that
+6.  This packet is the reply to the ARP request. What is the MAC address that
     has been provided in the reply for the requested host IPv4 address (format
     xx:xx:xx:xx:xx:xx)?
 
-2.  The opcode for this packet indicates that it is a reply. What is the opcode
+7.  The opcode for this packet indicates that it is a reply. What is the opcode
     number in the ARP protocol section indicating a reply?
 
 Step 2: Understanding DNS Attributes
@@ -125,20 +125,20 @@ and their contents in client-server based DNS communications.
 -   In the middle viewing window, expand the “User Datagram Protocol” Layer of
     the first packet and answer the following questions.
 
-1.  What UDP port is the host using in its request for domain name resolution
+3.  What UDP port is the host using in its request for domain name resolution
     (source port)?
 
-2.  What UDP port is the request being sent to on the destination server
+4.  What UDP port is the request being sent to on the destination server
     (destination port)?
 
 -   In the middle viewing window, expand the “Domain Name System” Layer of the
     first packet and answer the following questions.
 
-1.  Expand the “Flags” portion of the DNS header. This packet is a query; based
+5.  Expand the “Flags” portion of the DNS header. This packet is a query; based
     on the two bytes given in the Flags portion (0x0100), what is the opcode
     value of a query (provide decimal value)?
 
-2.  Expand the “Queries” portion of the DNS header. What is the domain name that
+6.  Expand the “Queries” portion of the DNS header. What is the domain name that
     resolution has been requested for?
 
 Step 3: Understanding HTTP Attributes
@@ -187,13 +187,13 @@ and their contents in client-server based HTTP communications.
 -   Using both the middle viewing window, examine packets 4 and 12, which
     contain HTTP data. Answer the following questions about the HTTP layer.
 
-1.  Based on the request header format, the first item is the “method”. For
+3.  Based on the request header format, the first item is the “method”. For
     packet 4, which contains a HTTP request, what method is specified and what
     does this mean?
 
-2.  The server responds to requests with response messages and any
+4.  The server responds to requests with response messages and any
     related/requested information. Looking at packet 12, what is the response
     code the server provides and what does that mean?
 
-3.  In packet 12, find the “Line Based Text” field. Expand this field and
+5.  In packet 12, find the “Line Based Text” field. Expand this field and
     investigate it. What do you think this information is?
