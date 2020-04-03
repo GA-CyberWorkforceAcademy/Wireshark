@@ -6,7 +6,7 @@ Recovering Data with Wireshark
 
 Record your answers to all of the questions presented in the exercise. Ensure
 you record the step number and question number for quick reference. The end of
-exercise quiz located in canvas covers a random selection of these questions.
+exercise quiz located in Canvas covers a random selection of these questions.
 
 ### Objectives:
 
@@ -17,7 +17,7 @@ understood through traffic analysis.
 
 ### Pre-requisites:
 
--   Wireshark Installed on workstation
+-   Wireshark installed on workstation
 
 -   Downloaded Exercise 2 PCAP files from Canvas link
 
@@ -29,7 +29,7 @@ Step 1: Exporting Data Objects
 ------------------------------
 
 The export data objects feature scans through the selected protocol’s streams in
-the currently open capture file or running capture and allows the user to export
+the current open capture file or running capture and allows the user to export
 reassembled objects to the disk. For example, if you select HTTP, you can export
 HTML documents, images, executables, and any other files transferred over HTTP
 and save to a selected disk location. If you have a capture running, this list
@@ -48,7 +48,7 @@ file.
     scroll down and see a total of 3823) of packets in the pcap. Verify that the
     “protocol” column displays a number of packets of the type “HTTP”.
 
--   Select the from the “file” menu, the option for “Export Objects”. This is
+-   Open the “file” menu and select the option for “Export Objects”. This is
     display another menu that indicates supported protocols. Highlight and
     select “HTTP”. See the image of the menu selections below.
 
@@ -71,7 +71,7 @@ file.
 Step 2: Carving Data from Common Protocols
 ------------------------------------------
 
-Although TFTP (Trivial File Transfer Protocol) is supported by Wirshark’s data
+Although TFTP (Trivial File Transfer Protocol) is supported by Wireshark’s data
 object export function, another common protocol, FTP (File Transfer Protocol) is
 not. This does not mean you cannot recover data transferred with this protocol
 however. Because the captured data is a bit-for-bit copy of the traffic, you can
@@ -99,7 +99,7 @@ data objects from protocols not natively exported by Wireshark.
     a host and an FTP server. Servers using FTP actually use two ports. The
     command and control (such as authentication, communications, etc) use port
 
--   Data being transfers as a part of a file transfer request uses port 20. The
+-   Data being transferred as a part of a file transfer request uses port 20. The
     communications you see for the TCP conversation selected are using port 21;
     you can see in the window that a user logged in, looked at the files in the
     directory, and then requested a file transfer (pantheon.jpg).
@@ -112,7 +112,7 @@ data objects from protocols not natively exported by Wireshark.
     stream value to 1, you can view the next stream. This stream (1) sets up
     communications between the server and host to receive data of TCP port 21
     (FTP-DATA). Set the filter’s tcp stream value to (2), as shown below to view
-    the TCP stream in which the file is transfers.
+    the TCP stream in which the file is transferred.
 
 ![](media/a0bffca18dbba4022553c49a9a84e393.png)
 
@@ -122,8 +122,8 @@ data objects from protocols not natively exported by Wireshark.
 
 ![](media/5103f8d50e03954c215de58137c9ebc8.png)
 
--   Notice that there are a few things that are readable (Adobe Photo shop info,
-    timestamps etc) but scrolling through the data it is largely unintelligible.
+-   Notice that there are a few things that are readable (AdobePhoto shop info,
+    timestamps etc.) but scrolling through the data it is largely unintelligible.
     This is because the viewing window is interpreting the data as ASCII
     (readable text characters) but the data is in fact a picture in the form of
     a jpeg file. The only portions that can be properly rendered via ASCII is
@@ -135,7 +135,7 @@ data objects from protocols not natively exported by Wireshark.
 
 -   Use the “Save as…” button and save the file on your computer with the “.jpg”
     extension. You can save the file with any name you would like, as long as it
-    has the correction file extension. This pulls the raw data from tcp stream 2
+    has the correction file extension. This pulls the raw data from TCP stream 2
     out of the pcap and assembles it into a file in the save location. This file
     extension lets your computer’s operating system know how to interpret the
     data (1’s and 0’s) and reassemble them, as well as what types of programs on
@@ -149,7 +149,7 @@ data objects from protocols not natively exported by Wireshark.
 -   The method used here to save raw data as a file works for any protocol/data
     as long as you know how to find the specific data you want to extract, and
     what file type it should be saved as. This means that even malware/viruses
-    can be extracted from a PCAP. Although traffic containing malware rendered
+    can be extracted from a pcap. Although traffic containing malware rendered
     in Wireshark is safe since it is a graphical depiction of the bits and not
     an executable program, remember that the malware can be extracted from a
     pcap and would be live and dangerous at that point.
