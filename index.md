@@ -1,5 +1,5 @@
-What is Wireshark
-=================
+What is Wireshark?
+==================
 
 Wireshark is an open-source network packet analyzer that provides an easy to use
 GUI interface. This packet analyzer can capture and present packet data in
@@ -7,8 +7,8 @@ detail, allowing you to see what is happening inside network communications.
 
 Wireshark is an important tool for IT and Cybersecurity professionals but also
 makes a great teaching tool. Professionals may use Wireshark to investigate
-problems, analyst security incidents or verify network operations, but the depth
-and detail that this tool provides make it appropriate for learning and
+problems, analyze security incidents or verify network operations, but the depth
+and detail that this tool provides makes it appropriate for learning and
 exploring network communications.
 
 What can Wireshark do?
