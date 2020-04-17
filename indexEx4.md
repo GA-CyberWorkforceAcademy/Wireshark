@@ -10,5 +10,5 @@ exercise:
 -   [Download File 1 for Exercise
     Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/telnet.pcap)
 
-Instructions for “Wireshark Filtering”
-======================================
+Instructions for “Wireshark Filtering Lab”. (Open a new Tab)
+============================================================
