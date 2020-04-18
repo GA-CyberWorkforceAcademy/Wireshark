@@ -7,8 +7,7 @@ The instructions and exercise provided here require the use of Wireshark on your
 computer. You will need to download the following pcap files to use during the
 exercise:
 
--   [Download File 1 for Exercise
-    Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/wireshark-df.pcap)
+-   Download File 1 for Exercise Here
 
-Instructions for “Wireshark Filtering Lab”
-==========================================
+[Instructions for “Wireshark Filtering Lab"](https://ga-cyberworkforceacademy.github.io/Wireshark/Exercise_4)”
+==============================================================================================================
