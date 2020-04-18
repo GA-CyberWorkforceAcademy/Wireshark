@@ -10,5 +10,5 @@ exercise:
 -   [Download File 1 for Exercise
     Here](https://ga-cyberworkforceacademy.github.io/Wireshark/PCAP_Samples/wireshark-df.pcap)
 
-Instructions for “Wireshark Filtering Lab"”
-===========================================
+Instructions for “Wireshark Filtering Lab"
+==========================================
