@@ -13,5 +13,5 @@ exercise:
 -   [Download File 2 for Exercise
     Here](https://github.com/GA-CyberWorkforceAcademy/Wireshark/raw/master/PCAP_Samples/MagicJack.pcap)
 
-Instructions for “Discovering Traffic with Wireshark”
-=====================================================
+
+[Instructions for “Discovering Traffic with Wireshark”](https://ga-cyberworkforceacademy.github.io/Wireshark/Exercise_1)
